@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+<!-- 1 -->
+{% load static %} {% block branding %}
+<h1 id="head">
+  <img
+    src="{% static 'img/EstateLogofillWhite.svg' %}"
+    alt="Davis Estates Admin"
+    class="brand_img"
+    width="80"
+    height="50"
+  />
+  Davis Estates Admin
+</h1>
+{% endblock branding %}
+<!-- 1 -->
+{% block extrastyle %}
+<link rel="stylesheet" href="{% static 'css/admin.css' %}" />
+{% endblock extrastyle %}
