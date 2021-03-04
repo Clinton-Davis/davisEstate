@@ -103,19 +103,19 @@
         <div class="row mb-5 fields">
           <div class="col-md-6">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-money-bill-alt"></i> Asking Price:
                 <span class="float-right">€{{ listing.price|intcomma}}</span>
               </li>
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-bed"></i> Bedrooms:
                 <span class="float-right">{{ listing.bedrooms}}</span>
               </li>
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-bath"></i> Bathrooms:
                 <span class="float-right">{{ listing.bathrooms}}</span>
               </li>
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-car"></i> Parking:
                 <!-- 1 -->
                 {% if listing.parking %}
@@ -128,16 +128,16 @@
           </div>
           <div class="col-md-6">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-th-large"></i> Square Meters:
                 <span class="float-right">{{ listing.sqm}}</span>
               </li>
 
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-calendar"></i> Listing Date:
                 <span class="float-right">{{ listing.list_date}}</span>
               </li>
-              <li class="list-group-item text-secondary">
+              <li class="list-group-item">
                 <i class="fas fa-bed"></i> Agent:
                 <span class="float-right">{{ listing.agent}}</span>
               </li>

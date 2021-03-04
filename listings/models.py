@@ -13,7 +13,7 @@ class Listing(models.Model):
     description = models.TextField(blank=True)
     price = models.IntegerField()
     bedrooms = models.IntegerField()
-    bathrooms = models.DecimalField(max_digits=2, decimal_places=1)
+    bathrooms = models.IntegerField()
     parking = models.BooleanField(default=False)
     sqm = models.IntegerField()
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')

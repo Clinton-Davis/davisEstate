@@ -13,7 +13,7 @@
         <h1 class="display-4 mb-4">Find your way home</h1>
 
         <div class="search">
-          <form action="search.html">
+          <form action="{% url 'listings:search' %}">
             <!-- Form Row 1 -->
             <div class="form-row">
               <div class="col-md-4 mb-3">
@@ -22,7 +22,7 @@
                   type="text"
                   name="keywords"
                   class="form-control"
-                  placeholder="Keyword (Pool, Garage, etc)"
+                  placeholder="Keyword (Parking, Bus, etc)"
                 />
               </div>
 
@@ -37,18 +37,14 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="sr-only">County</label>
-                <select name="state" class="form-control">
+                <label class="sr-only"> Counties</label>
+                <select name="counties" class="form-control">
                   <option selected="true" disabled="disabled">
-                    County (All)
+                    Counties (All)
                   </option>
-                  <option value="AL">Dublin</option>
-                  <option value="AL">Cork</option>
-                  <option value="AL">Galway</option>
-                  <option value="AL">Limerick</option>
-                  <option value="AL">Kerry</option>
-                  <option value="AL">Donegal</option>
-                  <option value="AL">Wexford</option>
+                  {% for key,value in county_choices.items %}
+                  <option value="{{key}}">{{value}}</option>
+                  {% endfor %}
                 </select>
               </div>
             </div>
@@ -60,16 +56,9 @@
                   <option selected="true" disabled="disabled">
                     Bedrooms (All)
                   </option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
+                  {% for key,value in bedroom_choices.items %}
+                  <option value="{{key}}">{{value}}</option>
+                  {% endfor %}
                 </select>
               </div>
               <div class="col-md-6 mb-3">
@@ -77,16 +66,9 @@
                   <option selected="true" disabled="disabled">
                     Max Price (Any)
                   </option>
-                  <option value="100000">€100,000</option>
-                  <option value="200000">€200,000</option>
-                  <option value="300000">€300,000</option>
-                  <option value="400000">€400,000</option>
-                  <option value="500000">€500,000</option>
-                  <option value="600000">€600,000</option>
-                  <option value="700000">€700,000</option>
-                  <option value="800000">€800,000</option>
-                  <option value="900000">€900,000</option>
-                  <option value="1000000">€1M+</option>
+                  {% for key,value in price_choices.items %}
+                  <option value="{{key}}">{{value}}</option>
+                  {% endfor %}
                 </select>
               </div>
             </div>
@@ -136,10 +118,10 @@
             </div>
             <div class="row py-2 text-secondary">
               <div class="col-6">
-                <i class="fas fa-bed"></i> Bedrooms: {{ listing.bathrooms }}
+                <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}
               </div>
               <div class="col-6">
-                <i class="fas fa-bath"></i> Bathrooms: {{ listing.bedrooms }}
+                <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathrooms }}
               </div>
             </div>
             <hr />
