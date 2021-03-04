@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
-from django.template.loader import render_to_string
 from .models import Contact
 
 def contact(request):
@@ -40,6 +39,7 @@ def contact(request):
         )
         contact.save()
 
+      
         
         admin = settings.DEFAULT_FROM_EMAIL,
         send_mail(

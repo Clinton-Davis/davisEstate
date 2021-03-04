@@ -126,7 +126,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 #Email Config
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 NOTIFY_EMAIL = env('NOTIFY_EMAIL')
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
