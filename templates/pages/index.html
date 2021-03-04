@@ -4,10 +4,14 @@
 <!-- 1 -->
 {% load static %}
 <!-- 1 -->
+{% block title %} | Home {% endblock title %}
+<!-- 1 -->
 {% block content %}
 <!-- Showcase -->
 <section id="showcase">
   <div class="container text-center">
+    <!-- Alerts  -->
+    {% include "includes/_messages.html" %}
     <div class="home-search p-5">
       <div class="overlay p-5">
         <h1 class="display-4 mb-4">Find your way home</h1>
