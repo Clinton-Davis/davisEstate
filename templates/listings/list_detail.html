@@ -45,7 +45,7 @@
       >Back To Listings</a
     >
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-8">
         <!-- Home Main Image -->
         <img
           src="{{ listing.photo_main.url }}"
@@ -155,19 +155,19 @@
 
         <!-- Description -->
         <div class="row mb-5">
-          <div class="col-md-12">{{ listing.description}}</div>
+          <div class="col-md-12">{{ listing.description|safe}}</div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="card mb-3">
           <img
-            class="card-img-top"
+            class="card-img-top-agent"
             src="{{ listing.agent.photo.url }}"
             alt="{{ listing.agent.photo.url }}"
           />
           <div class="card-body">
-            <h5 class="card-title">Property Agent</h5>
-            <h6 class="text-secondary">{{ listing.agent}}</h6>
+            <h5 class="card-title text-center">Property Agent</h5>
+            <h6 class="text-secondary text-center">{{ listing.agent}}</h6>
           </div>
         </div>
         <button

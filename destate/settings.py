@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     
+    'ckeditor',
+    
     'pages',
     'agents',
     'listings',
