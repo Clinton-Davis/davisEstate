@@ -46,7 +46,7 @@
             <img class="card-img-top" src="{{listing.photo_main.url}}" alt="" />
             <div class="card-img-overlay">
               <h2>
-                <span class="badge badge-secondary text-white">€{{listing.price|intcomma}}</span>
+                <span class="badge badge-secondary fa-primary">€{{listing.price|intcomma}}</span>
               </h2>
             </div>
             <div class="card-body">
@@ -61,7 +61,16 @@
                 <div class="col-6">
                   <i class="fas fa-th-large"></i> M&#178; : {{ listing.sqm }}
                 </div>
-                <div class="col-6"><i class="fas fa-car"></i> Parking:  {{ listing.parking }}</div>
+                <div class="col-6">
+                  
+                  {% if listing.parking %}
+                  <i class="fas fa-car"></i> Parking: Yes
+                  <!-- 1 -->
+                  {% else %}
+                  <i class="fas fa-car"></i> Parking: No
+                  <!-- 1 -->
+                  {% endif %}
+                </div>
               </div>
               <div class="row py-2 text-secondary">
                 <div class="col-6"><i class="fas fa-bed"></i> Bedrooms:  {{ listing.bathrooms }}</div>

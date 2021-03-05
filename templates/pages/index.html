@@ -77,7 +77,7 @@
               </div>
             </div>
             <button class="btn btn-secondary btn-block mt-4" type="submit">
-              Submit form
+              Search
             </button>
           </form>
         </div>
@@ -98,12 +98,12 @@
           <img class="card-img-top" src="{{listing.photo_main.url}}" alt="" />
           <div class="card-img-overlay">
             <h2>
-              <span class="badge badge-secondary text-white"
+              <span class="badge badge-secondary fa-primary"
                 >€{{listing.price|intcomma}}</span
               >
             </h2>
           </div>
-          <div class="card-body">
+          <div class="card-body fa-primary">
             <div class="listing-heading text-center">
               <h4 class="text-primary">{{listing.title}}</h4>
               <p>
@@ -112,15 +112,21 @@
               </p>
             </div>
             <hr />
-            <div class="row py-2 text-secondary">
+            <div class="row py-2 fa-primary">
               <div class="col-6">
                 <i class="fas fa-th-large"></i> M&#178; : {{ listing.sqm }}
               </div>
               <div class="col-6">
-                <i class="fas fa-car"></i> Parking: {{ listing.parking }}
+                {% if listing.parking %}
+                <i class="fas fa-car"></i> Parking: Yes
+                <!-- 1 -->
+                {% else %}
+                <i class="fas fa-car"></i> Parking: No
+                <!-- 1 -->
+                {% endif %}
               </div>
             </div>
-            <div class="row py-2 text-secondary">
+            <div class="row py-2 fa-primary">
               <div class="col-6">
                 <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}
               </div>
@@ -129,12 +135,12 @@
               </div>
             </div>
             <hr />
-            <div class="row py-2 text-secondary">
+            <div class="row py-2 fa-primary">
               <div class="col-12">
                 <i class="fas fa-user"></i> {{ listing.agent }}
               </div>
             </div>
-            <div class="row text-secondary pb-2">
+            <div class="row fa-primary pb-2">
               <div class="col-6">
                 <i class="fas fa-clock"></i> {{ listing.list_date|timesince }}
               </div>
@@ -160,34 +166,36 @@
 <section id="services" class="py-5 bg-secondary text-white">
   <div class="container">
     <div class="row text-center">
-      <div class="col-md-4">
-        <i class="fas fa-comment fa-4x mr-4"></i>
+      <div class="col-md-4 fa-primary">
+        <i class="fa-primary fas fa-comment fa-4x mr-4"></i>
         <hr />
         <h3>Consulting Services</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          debitis nam! Repudiandae, provident iste consequatur hic dignissimos
-          ratione ea quae.
+          At Davis Estates we give specialized investment and financial advice
+          to clients looking to buy, sell or invest in property. They work
+          closely with people throughout the process of buying and selling
+          properties.
         </p>
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-home fa-4x mr-4"></i>
+      <div class="col-md-4 fa-primary">
+        <i class="fa-primary fas fa-home fa-4x mr-4"></i>
         <hr />
         <h3>Propery Management</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          debitis nam! Repudiandae, provident iste consequatur hic dignissimos
-          ratione ea quae.
+          Maintains property by investigating and resolving tenant complaints,
+          enforcing rules of occupancy, planning renovations, contracting with
+          landscaping and snow removal services. Maintains building systems by
+          contracting for maintenance services and supervising repairs.
         </p>
       </div>
-      <div class="col-md-4">
-        <i class="fas fa-suitcase fa-4x mr-4"></i>
+      <div class="col-md-4 fa-primary">
+        <i class="fa-primary fas fa-suitcase fa-4x mr-4"></i>
         <hr />
         <h3>Renting & Selling</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          debitis nam! Repudiandae, provident iste consequatur hic dignissimos
-          ratione ea quae.
+          We will look after all your renting and selling needs. We will find
+          the best price for you and keep you in the loop throughout the entire
+          process. Renting? We have you covered.
         </p>
       </div>
     </div>
