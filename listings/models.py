@@ -16,6 +16,7 @@ class Listing(models.Model):
     bathrooms = models.IntegerField()
     parking = models.BooleanField(default=False)
     sqm = models.IntegerField()
+    ber = models.CharField(max_length=2, default=0)
     photo_main = models.ImageField(upload_to='photos/%Y/%m/%d/')
     photo_1 = models.ImageField(upload_to='photos/%Y/%m/%d/',blank=True)
     photo_2 = models.ImageField(upload_to='photos/%Y/%m/%d/',blank=True)
