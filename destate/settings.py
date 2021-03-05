@@ -2,6 +2,9 @@
 import os
 from pathlib import Path
 import environ
+import dj_database_url
+
+
 env = environ.Env()
 # reading .env file
 environ.Env.read_env()
@@ -74,11 +77,15 @@ WSGI_APPLICATION = 'destate.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+DATABASE = {
+    'default': dj_database_url.parse('postgres://gfcexnpdmkbqkd:02c06492589eae5a0a6c5598ebba8be1414cb36f758cd5edb369866a33da1eb5@ec2-52-213-167-210.eu-west-1.compute.amazonaws.com:5432/d4m0p0eb1vj39')
 }
 
 

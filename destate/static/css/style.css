@@ -16,7 +16,9 @@
 .btn-secondary {
   color: #fff !important;
 }
-
+#top-bar {
+  background-color: #f2f8fa;
+}
 img {
   width: 100%;
 }
