@@ -180,6 +180,7 @@
         <hr />
         <!-- Google Maps Goes here -->
         <div id="map"></div>
+        <input hidden id="address" value="{{ listing.address }}" />
       </div>
     </div>
   </div>
@@ -277,4 +278,10 @@
     </div>
   </div>
 </div>
+
+<script src="{% static 'js/googleMaps.js' %}"></script>
 {% endblock content %}
+<!-- 1 -->
+{% block postLoadjs %}
+<!-- 1 -->
+{% endblock postLoadjs %}

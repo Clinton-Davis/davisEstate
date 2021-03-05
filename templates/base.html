@@ -25,8 +25,16 @@
     {% block content %}
     <!-- 1 -->
     {% endblock content %}
+    <!-- 1 -->
+    {% block postLoadjs %}
+    <!-- 1 -->
+    {% endblock postLoadjs %}
     <!-- Footer -->
     {% include "includes/_footer.html" %}
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFqLdIMUdgxVIf0CugVYgzvnKSWdcOlaU&callback=initMap"
+    ></script>
     <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
     <script src="{% static 'js/lightbox.min.js' %} "></script>

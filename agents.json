@@ -1,0 +1,41 @@
+[
+  {
+    "model": "agents.agent",
+    "pk": 1,
+    "fields": {
+      "name": "Rene Rodriguez",
+      "photo": "photos/2021/03/03/Rene_Rodriguez.jpg",
+      "description": "Rene Rodriguez is one of Dublin's most trusted and top-selling agents, counting among his clients numerous distinguished business and community leaders. A member of the Cabot residential team since 1996, Rene works with individuals, investors, and developers interested in the city�s most coveted properties�with a particular focus on the Back Bay, Beacon Hill, and South End neighbourhoods.\r\n\r\nRene is ranked among the best brokers in Boston and with more than �48,000,000.00 in sales in 2018, was ranked twelfth overall in the city for the year. Recent successes have included the sale of a historic 19th Century Marlborough Street townhouse that is being restored to an elegant single-family home, and the record-setting sale of the penthouse at The Lydon, in Back Bay, for �14,300,000.\r\n\r\nA high-touch broker known for his extensive market knowledge and his unmatched devotion to clients, Rene�s success is based almost exclusively on positive referrals. He earns the respect of his clients by working tirelessly on their behalf and by always offering them candid advice. Rene also utilizes the latest technologies and is supported by a full-time sales assistant, Jack Lavanchy, who shares Rene�s attention to detail and passion for perfection.\r\n\r\nRene is deeply connected to Boston. He graduated in 1992 with a finance degree from Babson College and has lived in the South End, the Back Bay, and Jamaica Plain. Rene supports numerous local organizations and charities�including Babson, the Huntington Theater Company, and the Leukemia & Lymphoma Society.\r\n\r\nWhen he isn�t working, Rene enjoys cooking, travelling, collecting art, restoring old houses, and spending time with his family and friends.",
+      "phone": "086 555 555",
+      "email": "rrodriguez@davisestates.com",
+      "is_mvp": false,
+      "hire_date": "2012-03-03T13:37:45Z"
+    }
+  },
+  {
+    "model": "agents.agent",
+    "pk": 2,
+    "fields": {
+      "name": "Josh Ortiz",
+      "photo": "photos/2021/03/03/Josh_Ortiz_Web--Bowerbird-Photography-2018-230x230.jpg",
+      "description": "Originally from Cork, Josh has called San Francisco home since 2012. As a lead buyer specialist, Josh is a shrewd negotiator and true team player with a competitive streak: a winning combination in real estate sales. He constantly studies the market to locate the best opportunities for his clients. Josh attributes his success to the relationships he builds and his transparent approach. He is persistent and dedicated to achieving his clients� goals.",
+      "phone": "087 666 555",
+      "email": "joshortiz@davisestates.com",
+      "is_mvp": true,
+      "hire_date": "2011-03-03T13:43:31Z"
+    }
+  },
+  {
+    "model": "agents.agent",
+    "pk": 3,
+    "fields": {
+      "name": "April Gaxiola",
+      "photo": "photos/2021/03/03/april.jpg",
+      "description": "Born and raised in the Bay Area, April fell in love with real estate while purchasing her first investment. She has over 8 years of experience in the industry, having worked in real estate sales, lending and transaction services covering the entire Bay Area. A graduate of Cal State East Bay with a Bachelor's Degree in Organizational Psychology, April loves trips with her husband and sons to Lake Tahoe and Kerry.",
+      "phone": "085 555 767",
+      "email": "Aprilgaxiola@davisestates.com",
+      "is_mvp": false,
+      "hire_date": "2015-03-03T13:44:46Z"
+    }
+  }
+]
