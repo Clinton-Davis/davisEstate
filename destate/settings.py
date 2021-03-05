@@ -31,10 +31,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     
     'pages',
     'agents',
     'listings',
+    'accounts',
+    'contact'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +124,21 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, "destate/static"),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+#Email Config
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+NOTIFY_EMAIL = env('NOTIFY_EMAIL')
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASS')
+DEFAULT_FROM_EMAIL = env('EMAIL_HOST_USER')
+
+
+#Messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger'
+}
+

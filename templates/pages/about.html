@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 <!-- 1 -->
-{% load static %} {% block content %}
+{% load static %}
+<!-- 1 -->
+{% block title %} | About Us{% endblock title %}
+<!-- 1 -->
+{% block content %}
 
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
@@ -50,22 +54,26 @@
           laborum molestias quia.
         </p>
       </div>
+
       <div class="col-md-4">
+        {% if mvp_agent %}
+        <!-- 1 -->
+        {% for mvp in mvp_agent %}
         <div class="card">
           <img
             class="card-img-top"
-            src="assets/img/realtors/kyle.jpg"
+            src="{{mvp.photo.url}}"
             alt="Seller of the month"
           />
           <div class="card-body">
             <h5 class="card-title">Seller Of The Month</h5>
-            <h6 class="text-secondary">Kyle Brown</h6>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              nesciunt amet, illo itaque similique repellat. content.
-            </p>
+            <h6 class="text-secondary">{{mvp.name}}</h6>
+            <p class="card-text">{{ mvp.description }}</p>
           </div>
         </div>
+        {% endfor %}
+        <!-- 1 -->
+        {% endif %}
       </div>
     </div>
   </div>
@@ -89,46 +97,23 @@
   <div class="container">
     <h2 class="text-center">Our Team</h2>
     <div class="row text-center">
+      {% for agent in agents %}
       <div class="col-md-4">
-        <img
-          src="assets/img/realtors/kyle.jpg"
-          alt=""
-          class="rounded-circle mb-3"
-        />
-        <h4>Kyle Brown</h4>
+        <img src="{{ agent.photo.url }}" alt="" class="rounded-circle mb-3" />
+        <h4>{{ agent.name }}</h4>
+        <!-- TODO!!! MAKE DESC DROP DOWN -->
         <p class="text-success">
-          <i class="fas fa-award text-success mb-3"></i> Realtor
+          <i class="fas fa-award text-success mb-3"></i> Agent
         </p>
         <hr />
-        <p><i class="fas fa-phone"></i> (555)-555-5555</p>
-        <p><i class="fas fa-envelope-open"></i> kyle@btrealestate.co</p>
+        <p><i class="fas fa-phone"></i> {{ agent.phone }}</p>
+        <p><i class="fas fa-envelope-open"></i> {{ agent.email }}</p>
       </div>
-
-      <div class="col-md-4">
-        <img
-          src="assets/img/realtors/mark.jpg"
-          alt=""
-          class="rounded-circle mb-3"
-        />
-        <h4>Mark Hudson</h4>
-        <p class="text-success">Realtor</p>
-        <hr />
-        <p><i class="fas fa-phone"></i> (444)-444-4444</p>
-        <p><i class="fas fa-envelope-open"></i> mark@btrealestate.co</p>
+      {% empty %}
+      <div class="col-md-12">
+        <p>No Agents Available</p>
       </div>
-
-      <div class="col-md-4">
-        <img
-          src="assets/img/realtors/jenny.jpg"
-          alt=""
-          class="rounded-circle mb-3"
-        />
-        <h4>Jenny Johnson</h4>
-        <p class="text-success">Realtor</p>
-        <hr />
-        <p><i class="fas fa-phone"></i> (333)-333-3333</p>
-        <p><i class="fas fa-envelope-open"></i> jenny@btrealestate.co</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
