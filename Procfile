@@ -1,1 +1,1 @@
-web: gunicorn davis-estate.wsgi:application
+web: gunicorn davisEstate.wsgi:application
