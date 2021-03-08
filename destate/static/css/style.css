@@ -30,7 +30,9 @@ img {
 .logo {
   width: 80px;
 }
-
+.address {
+  min-height: 4.5rem;
+}
 .navbar {
   opacity: 0.9;
   text-transform: uppercase;

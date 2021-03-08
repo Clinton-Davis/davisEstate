@@ -4228,6 +4228,7 @@ input[type="button"].btn-block {
 
 .card-img-top {
   width: 100%;
+  max-height: 14rem;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
   border-radius: 1rem;
