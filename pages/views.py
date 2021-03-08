@@ -12,7 +12,7 @@ def index(request):
         'price_choices': price_choices,
         'county_choices': county_choices,
     }
-    return render(request, 'pages/index.HTML', context)    
+    return render(request, 'pages/index.html', context)    
 
 def about(request):
     agent = Agent.objects.order_by('-hire_date')
