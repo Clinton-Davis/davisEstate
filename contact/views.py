@@ -39,15 +39,21 @@ def contact(request):
         )
         contact.save()
 
-      
+        full_message = f"""
+        Received message below from {name}, {email}
+        ___________________________
+        {message}
+
+        """
         
-        admin = settings.DEFAULT_FROM_EMAIL,
+        
         send_mail(
-            'Davis Estate - Property Listing Inquiry',
-            'There has been an inuiry for. ' + listing + '. Sign In for more details',
-            admin,
-            [agent_email, admin],
-             fail_silently=False,
+            subject='Davis Estate - Property Listing Inquiry',
+            message=full_message,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[agent_email, settings.DEFAULT_FROM_EMAIL],
+            fail_silently=False,
+          
         )
 
         messages.success(
