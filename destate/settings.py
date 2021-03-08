@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'destate.wsgi.application'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
-    'default': dj_database_url.parse(env('DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ('DATABASE_URL'))
     }
     
 else:
