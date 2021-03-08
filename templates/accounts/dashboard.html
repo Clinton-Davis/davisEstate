@@ -56,6 +56,8 @@
                 <a class="btn btn-light" href="#">View Listing</a>
               </td>
             </tr>
+            {% empty %}
+            <p>You have not made any inquirys yet</p>
             {% endfor %}
           </tbody>
         </table>

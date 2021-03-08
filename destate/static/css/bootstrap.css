@@ -4125,6 +4125,14 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+.card:hover {
+  border: 1px solid rgba(0, 0, 0, 0.801);
+}
+.card-log {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 21px 1px rgba(0, 0, 0, 0.75);
+}
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4205,6 +4213,7 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
+  box-shadow: 0px 2px 21px 1px rgba(0, 0, 0, 0.75);
 }
 
 .card-img {

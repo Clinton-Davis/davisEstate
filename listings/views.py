@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.conf import settings
 from .models import Listing
 from listings.selectChoices import bedroom_choices, price_choices, county_choices
 
@@ -19,9 +20,10 @@ def listings(request):
     
 def list_details(request, listing_id):
      listing = get_object_or_404(Listing, pk=listing_id)
-     
+     google_maps_api_key = settings.GOOGLE_MAPS_API_KEY
      context = {
           'listing': listing,
+          'google_maps_api_key': google_maps_api_key
      }
      return render(request, 'listings/list_detail.html', context)
     
