@@ -1,1 +1,1 @@
-web: gunicorn davisEstate.wsgi --log-file -
+web: gunicorn davisEstate.wsgi:application
