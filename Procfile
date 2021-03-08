@@ -1,1 +1,1 @@
-web: gunicorn destate.wsgi:application
+web: gunicorn destate.wsgi --log-file -
