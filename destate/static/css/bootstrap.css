@@ -4123,7 +4123,11 @@ input[type="button"].btn-block {
   background-color: #ffffff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .card:hover {
   border: 1px solid rgba(0, 0, 0, 0.801);
@@ -4213,7 +4217,8 @@ input[type="button"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
-  box-shadow: 0px 2px 21px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 21px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
 }
 
 .card-img {
@@ -4225,6 +4230,11 @@ input[type="button"].btn-block {
   width: 100%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .card-img-top-agent {
   width: 80%;

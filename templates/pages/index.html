@@ -126,26 +126,20 @@
                 {% endif %}
               </div>
             </div>
-            <div class="row py-2 fa-primary">
-              <div class="col-6">
-                <i class="fas fa-bed"></i> Bedrooms: {{ listing.bedrooms }}
+            <div class="row fa-primary">
+              <div class="col-6 mt-1">
+                <i class="fas fa-bed"></i> Bedrooms: {{ listing.bathrooms }}
               </div>
-              <div class="col-6">
-                <i class="fas fa-bath"></i> Bathrooms: {{ listing.bathrooms }}
+              <div class="col-6 mt-1">
+                <i class="fas fa-bath"></i> Bathrooms: {{ listing.bedrooms }}
               </div>
+              <div class="col-6 mt-1">
+                <i class="fas fa-clock"></i>Listing Date:&nbsp;
+              </div>
+              <div class="col-6 mt-1">{{ listing.list_date|date:"d/M/Y" }}</div>
             </div>
             <hr />
-            <div class="row py-2 fa-primary">
-              <div class="col-12">
-                <i class="fas fa-user"></i> {{ listing.agent }}
-              </div>
-            </div>
-            <div class="row fa-primary pb-2">
-              <div class="col-6">
-                <i class="fas fa-clock"></i> {{ listing.list_date|timesince }}
-              </div>
-            </div>
-            <hr />
+
             <a
               href="{% url 'listings:list_details' listing.id %}"
               class="btn btn-primary btn-block"

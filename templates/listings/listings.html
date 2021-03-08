@@ -56,12 +56,12 @@
                 </p>
               </div>
               <hr />
-              <div class="row  text-secondary">
-                <div class="col-6">
-                  <i class="fas fa-th-large"></i> M&#178; : {{ listing.sqm }}
-                </div>
-                <div class="col-6">
-                  
+              <div class="row  fa-primary">
+                <div class="col-6 my-1 "><i class="fas fa-bed"></i> Bedrooms:  {{ listing.bathrooms }}</div>
+                <div class="col-6 "><i class="fas fa-bath"></i> Bathrooms:  {{ listing.bedrooms }}</div>
+              </div>
+              <div class="row  fa-primary">
+                <div class="col-6 my-1">
                   {% if listing.parking %}
                   <i class="fas fa-car"></i> Parking: Yes
                   <!-- 1 -->
@@ -70,20 +70,13 @@
                   <!-- 1 -->
                   {% endif %}
                 </div>
-              </div>
-              <div class="row  text-secondary">
-                <div class="col-6 mt-1"><i class="fas fa-bed"></i> Bedrooms:  {{ listing.bathrooms }}</div>
-                <div class="col-6 mt-1"><i class="fas fa-bath"></i> Bathrooms:  {{ listing.bedrooms }}</div>
-                <div class="col-6 mt-1"><i class="fas fa-clock"></i>Listing Date:&nbsp;</div>
-                <div class="col-6 mt-1">{{ listing.list_date|date:"d/M/Y" }}</div>
+                <div class="col-6 my-1">
+                  <i class="fas fa-th-large"></i> M&#178; : {{ listing.sqm }}
+                </div>
+                <div class="col-6 my-1"><i class="fas fa-clock"></i>Listing Date:&nbsp;</div>
+                <div class="col-6 my-1">{{ listing.list_date|date:"d/M/Y" }}</div>
               </div>
               <hr />
-              <!-- <div class="row py-2 text-secondary">
-                <div class="col-12"><i class="fas fa-user"></i> {{ listing.agent }}</div>
-              </div>
-              <div class="row text-secondary pb-2">
-              </div>
-              <hr /> -->
               <a href="{% url 'listings:list_details' listing.id %}" class="btn btn-primary btn-block"
                 >More Info</a
               >

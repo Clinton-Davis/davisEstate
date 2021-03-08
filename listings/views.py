@@ -20,10 +20,8 @@ def listings(request):
     
 def list_details(request, listing_id):
      listing = get_object_or_404(Listing, pk=listing_id)
-     google_maps_api_key = settings.GOOGLE_MAPS_API_KEY
      context = {
           'listing': listing,
-          'google_maps_api_key': google_maps_api_key
      }
      return render(request, 'listings/list_detail.html', context)
     
