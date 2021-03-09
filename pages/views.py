@@ -21,4 +21,4 @@ def about(request):
         'agents': agent,
         'mvp_agent': mvp_agent
     }
-    return render(request, 'pages/about.HTML', context)    
+    return render(request, 'pages/about.html', context)    

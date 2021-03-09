@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Finiding your new home, less stress and fuss."
+    />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'css/all.css' %}" />
     <!-- Bootstrap -->
@@ -31,12 +35,12 @@
     {% endblock postLoadjs %}
     <!-- Footer -->
     {% include "includes/_footer.html" %}
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
     <script
       async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFqLdIMUdgxVIf0CugVYgzvnKSWdcOlaU&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFqLdIMUdgxVIf0CugVYgzvnKSWdcOlaU"
     ></script>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
     <script src="{% static 'js/lightbox.min.js' %} "></script>
     <script src="{% static 'js/main.js' %} "></script>
   </body>
