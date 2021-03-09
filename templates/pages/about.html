@@ -104,7 +104,11 @@
     <div class="row text-center">
       {% for agent in agents %}
       <div class="col-md-4">
-        <img src="{{ agent.photo.url }}" alt="" class="rounded-circle mb-3" />
+        <img
+          src="{{ agent.photo.url }}"
+          alt=""
+          class="rounded-circle mb-3 about-img"
+        />
         <h4>{{ agent.name }}</h4>
         <!-- TODO!!! MAKE DESC DROP DOWN -->
         <p class="fa-primary">
