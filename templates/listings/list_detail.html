@@ -138,7 +138,9 @@
 
               <li class="list-group-item">
                 <i class="fas fa-calendar"></i> Listing Date:
-                <span class="float-right">{{ listing.list_date}}</span>
+                <span class="float-right"
+                  >{{ listing.list_date|date:"d/M/Y"}}</span
+                >
               </li>
               <li class="list-group-item">
                 <i class="fas fa-bed"></i> Agent:
@@ -174,6 +176,7 @@
           {% endif %}
         </div>
       </div>
+      <!-- AGENT -->
       <div class="col-md-4">
         <div class="card mb-3">
           <img
