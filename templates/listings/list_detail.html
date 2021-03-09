@@ -87,7 +87,6 @@
           {% endif %}
           <!-- 5 -->
           {% if listing.photo_5 %}
-
           <div class="col-md-2">
             <a href="{{ listing.photo_5.url }}" data-lightbox="home-images">
               <img src="{{ listing.photo_5.url }}" alt="" class="img-fluid" />
@@ -156,6 +155,23 @@
         <!-- Description -->
         <div class="row mb-5">
           <div class="col-md-12">{{ listing.description|safe}}</div>
+        </div>
+        <div class="row mb-5">
+          {% if listing.photo_7 %}
+          <div class="col-md-6">
+            <a href="{{ listing.photo_7.url }}" data-lightbox="home-images">
+              <img src="{{ listing.photo_7.url }}" alt="" class="img-fluid" />
+            </a>
+          </div>
+          {% endif %}
+          <!-- 1 -->
+          {% if listing.photo_8 %}
+          <div class="col-md-6">
+            <a href="{{ listing.photo_8.url }}" data-lightbox="home-images">
+              <img src="{{ listing.photo_8.url }}" alt="" class="img-fluid" />
+            </a>
+          </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-md-4">
