@@ -44,16 +44,28 @@
           <div class="card listing-preview">
             <img class="card-img-top" src="{{listing.photo_main.url}}" alt="" />
             <div class="card-img-overlay ">
+              {% if not listing.sale_agreed and not listing.sold %}
               <h2>
                 <span class="badge badge-secondary fa-primary">€{{listing.price|intcomma}}</span>
               </h2>
+              {% endif %}
+              {% if listing.sale_agreed %}
+              <h2>
+                <span class="badge badge-danger fa-primary">Sale Agreed</span>
+              </h2>
+              {% endif %}
+              {% if listing.sold %}
+              <h2>
+                <span class="badge badge-danger fa-primary">SOLD</span>
+              </h2>
+              {% endif %}
             </div>
             <div class="card-body">
               <div class="listing-heading text-center">
-                <h4 class="text-primary">{{listing.title}}</h4>
-                <p class="address">
-                  <i class="fas fa-map-marker text-secondary"></i> {{listing.address}}  {{listing.city}}  <br>{{listing.county}}
-                </p>
+                <h5>
+                  {{listing.address}} {{listing.city}}
+                  <br />{{listing.county}}
+                </h5>
               </div>
               <hr />
               <div class="row fa-primary">

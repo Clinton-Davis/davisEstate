@@ -22,7 +22,7 @@ def contact(request):
                 listing_id=listing_id, user_id=user_id)
             if has_contacted:
                 messages.error(
-                    request, 'You have already made an Enquiries for this listing')
+                    request, 'You have already made an Enquirie for this listing')
                 return redirect('/listings/'+listing_id)
 
         contact = Contact(

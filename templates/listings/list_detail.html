@@ -4,14 +4,14 @@
 <!-- 1 -->
 {% load humanize %}
 <!-- 1 -->
-{% block title %} | {{listing.title}} {% endblock title %}
+{% block title %} | {{listing.address}} {% endblock title %}
 <!-- 1 -->
 {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
-        <h1 class="display-4">{{listing.title}}</h1>
+        <h1 class="display-4">{{listing.address}}</h1>
         <p class="lead">
           <i class="fas fa-map-marker"></i> {{listing.city}} {{listing.county}},
           {{listing.postcode}}
@@ -32,7 +32,7 @@
         <li class="breadcrumb-item">
           <a href="{% url 'listings:listings' %}">Listings</a>
         </li>
-        <li class="breadcrumb-item active">{{ listing.title }}</li>
+        <li class="breadcrumb-item active">{{ listing.address }}</li>
       </ol>
     </nav>
   </div>
@@ -199,7 +199,11 @@
         <hr />
         <!-- Google Maps Goes here -->
         <div id="map"></div>
-        <input hidden id="address" value="{{ listing.address }}" />
+        <input
+          hidden
+          id="address"
+          value="{{ listing.address }}{{listing.city}}{{listing.county}}"
+        />
       </div>
     </div>
   </div>
@@ -241,7 +245,7 @@
               type="text"
               name="listing"
               class="form-control"
-              value="{{ listing.title }}"
+              value="{{ listing.address }}"
             />
           </div>
           <div class="form-group">
