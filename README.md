@@ -2,15 +2,13 @@
 
 Davis Estates is a fake real estate website where you can look and search for listed propertys for sale.
 
+---
+
+<!-- [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) -->
+
 ## Motivation
 
 My motivation behind the creation of Davis Estates was practice using Django and building up my portfolio and have a example to show future clients.
-
-### Build status
-
-Build status of continus integration i.e. travis, appveyor etc. Ex. -
-
-<!-- [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) -->
 
 ## UX
 
@@ -51,25 +49,47 @@ Hold information regarding the
 - Property Management
 - Renting & Selling
 
-**About**
+##### About
 
-**Listings**
-**Listing Details**
-**Search**
-**Register**
-**Login**
+The About page holds all the details about Davis-Estates
+This is where you will find the "Seller Of The Month". There is there picture and bio.
+
+##### Listing
+
+Here are all the listing we have to offer. They are in a "Card" format with three in a row with 6 to a page.
+each listing has the price, a image, address, city and countie.
+Followed by the number of Bedrooms, Bathrooms, if there is parking and square meters, as wel as the date it was listed.
+At the bottom of the card is a 'More Info' button to take you to the listing details page.
+
+##### Listing Details
+
+The listing detials page has all the images of the listing and the agent that is looking after it.
+There is more info about the listing here with a detialed description, and a google maps on the address.
+Hear is where you can contact the agent to make an inquiry about the listing.
+
+##### Search
+
+If you search for a listing, you wikk be taken to the search page, it has the same layout as the lising page, but will only show listing what have the criteria you searched for.
+
+##### Register
+
+The register page is a simple form that askes for emial address, username and Password, after a successfull registen the user is logged in automatily.
+
+##### Login
+
+The login form askes for the username and password, then if login is successfull the user is redirected to the home page.
 **Dashboard**
 
 ### Surface
 
 #### Colour Scheme
 
-- ![#f7f7f7](https://placehold.it/15/f7f7f7/000000?text=+) `rgb(247, 247, 247)` - Primary-(Headings and text)
-- ![#000000cc](https://placehold.it/15/000000cc/000000?text=+) `rbg(0, 0, 0, 0.8)` - Secondary (Header, Footer Backgrounds)
-- ![#1bd87d](https://placehold.it/15/1bd87d/000000?text=+) `rgb(27, 216, 125)` - Supplementary colour 1
-- ![#e7313f](https://placehold.it/15/e7313f/000000?text=+) `rgb(231, 49, 63)` - Supplementary colour 2
-- ![#e5ce21](https://placehold.it/15/e5ce21/000000?text=+) `rgb(229, 206, 33)` - Supplementary colour 3
-- ![#0275d8](https://placehold.it/15/0275d8/000000?text=+) `rgb(91, 192, 222)` - Supplementary colour 4
+- ![#183f7e](https://placehold.it/15/183f7e/000000?text=+) `#183f7e` - Primary
+- ![#303aca](https://placehold.it/15/303aca/000000?text=+) `#303aca` - Secondary
+- ![#333333cc](https://placehold.it/15/333333cc/000000?text=+) `#333333cc` - Supplementary colour 1
+- ![#17a2b8](https://placehold.it/15/17a2b8/000000?text=+) `#17a2b8` - Supplementary colour 2
+- ![#e94646](https://placehold.it/15/e94646/000000?text=+) `#e94646` - Supplementary colour 3
+- ![#ffc107](https://placehold.it/15/ffc107/000000?text=+) `#ffc107` - Supplementary colour 4
 
 ---
 
@@ -91,7 +111,7 @@ Hold information regarding the
 - [GitHub](https://github.com/) ~ Distributed version control and source code management (SCM) functionality of Git, plus its own features.
 - [Travis](https://travis-ci.org/) ~ Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub and Bitbucket.
 - [Font Awesome](https://fontawesome.com/) ~ Font Awesome icons
-- [icons8](https://icons8.com/icons/set/instagram-logo) ~ Icons8 icons
+
 - [Git](https://git-scm.com/) ~ Distributed version control system
 - [Slack](https://slack.com/intl/en-ie/) ~ A workspaces allowing you to organize communications by channels for group discussions and allows for private messages to share information.
 - [autopep8](https://pypi.org/project/autopep8/) ~ A tool that automatically formats Python code to conform to the PEP 8 style guide
@@ -107,23 +127,18 @@ Hold information regarding the
 
 ## Features
 
-- Manage listings, realtors, contact inquiries and website users via admin
-- Role based users (staff and non-staff)
-- Display listings in app with pagination
-- Ability to set listings to unpublished
-- Search listings by keyword, city, state, bedrooms and price (Homepage & search page)
-- List realtors on about page with “seller of the month” (Control via admin)
-- Listing page should have fields listed below
-- Listing page should have 5 images with lightbox
-- Lightbox should scroll through images
-- Listing page should have a form to submit inquiry for that property listing
-- Form info should go to database and notify realtor(s) with an email
-- Frontend register/login to track inquiries
-- Both unregistered and registered users can submit form. If registered, can only submit one per listing
-
-## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+- The admin user may manage listings, agents, users and contact inquiries from the admin area.
+- Staff members may login to the admin area whale normal users many but may login.
+- Pagination is at 6 listing per page
+- The staff members have the ability to set listings to unpublished if they would like to take it off the market.
+- Users may search listings by keyword, city, state, bedrooms and price from the Homepage & search page.
+- A list of agents are on the about page with “seller of the month” that is controled via admin area.
+- Listing details page has all the data about the house listed below.
+- Listing details page has 8 images, 1 main image and 6 interior images with 2 for floor plan (if avalible) all connected by the lightbox.
+- The Lightbox scrolls through images.
+- The listing detial page has a form that can be submited to inquire about a property listing.
+- The inquire is saved to the database and the agent looking after the listing is notify via email.
+- Both unregistered and registered users can submit form. If registered, can only submit one per listing.
 
 ## Deployment
 
@@ -157,7 +172,10 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
 4. Change into focus_fitness directory.
 
-   `$ cd destates`
+   ```bash
+
+   $ cd destates
+   ```
 
 5. Install [virtualenv](https://pypi.org/project/virtualenv/)
 
@@ -238,10 +256,6 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
 </div>
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
 ## Tests
 
 Describe and show how to run the tests with code examples.
@@ -249,10 +263,6 @@ Describe and show how to run the tests with code examples.
 ## How to use?
 
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
-
-## Contribute
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
 
 ## Credits
 
