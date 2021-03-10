@@ -44,18 +44,13 @@ def contact(request):
         {message}
 
         """
-        
-        
         send_mail(
             subject='Davis Estate - Property Listing Inquiry',
             message=full_message,
             from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[agent_email, settings.DEFAULT_FROM_EMAIL],
             fail_silently=False,
-          
         )
-
         messages.success(
             request, 'You request has been submitted, the agent will get back to you soon')
-
         return redirect('/listings/'+listing_id)
