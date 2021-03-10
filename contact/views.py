@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail
@@ -15,7 +15,6 @@ def contact(request):
         user_id = request.POST['user_id']
         agent_email = request.POST['agent_email']
         agent_name = request.POST['agent_name']
-        
          #Check if user has made inquiry already
         if request.user.is_authenticated:
             user_id = request.user.id

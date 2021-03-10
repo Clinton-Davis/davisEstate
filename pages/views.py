@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from listings.models import Listing
 from agents.models import Agent
 from listings.selectChoices import bedroom_choices, price_choices, county_choices
@@ -12,7 +11,7 @@ def index(request):
         'price_choices': price_choices,
         'county_choices': county_choices,
     }
-    return render(request, 'pages/index.html', context)    
+    return render(request, 'pages/index.html', context)
 
 def about(request):
     agent = Agent.objects.order_by('-hire_date')
@@ -21,4 +20,4 @@ def about(request):
         'agents': agent,
         'mvp_agent': mvp_agent
     }
-    return render(request, 'pages/about.html', context)    
+    return render(request, 'pages/about.html', context)

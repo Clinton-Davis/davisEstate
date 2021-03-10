@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-from agents.models import Agent
+
 
 
 class Contact (models.Model):

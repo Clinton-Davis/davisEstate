@@ -14,7 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('favicon.ico', RedirectView.as_view(
         url=staticfiles_storage.url('img/favicon.ico'))),
-] 
+]
 if settings.DEBUG:
 
     urlpatterns += static(settings.MEDIA_URL,
