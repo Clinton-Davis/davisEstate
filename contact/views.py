@@ -15,14 +15,14 @@ def contact(request):
         user_id = request.POST['user_id']
         agent_email = request.POST['agent_email']
         agent_name = request.POST['agent_name']
-         #Check if user has made inquiry already
+         #Check if user has made Enquiries already
         if request.user.is_authenticated:
             user_id = request.user.id
             has_contacted = Contact.objects.all().filter(
                 listing_id=listing_id, user_id=user_id)
             if has_contacted:
                 messages.error(
-                    request, 'You have already made an inquiry for this listing')
+                    request, 'You have already made an Enquiries for this listing')
                 return redirect('/listings/'+listing_id)
 
         contact = Contact(
@@ -45,7 +45,7 @@ def contact(request):
 
         """
         send_mail(
-            subject='Davis Estate - Property Listing Inquiry',
+            subject='Davis Estate - Property Listing Enquiries',
             message=full_message,
             from_email=settings.DEFAULT_FROM_EMAIL,
             recipient_list=[agent_email, settings.DEFAULT_FROM_EMAIL],

@@ -4,6 +4,8 @@ Davis Estates is a fake real estate website where you can look and search for li
 
 ---
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/7b4f76ae857f4e60886cdeea68c90761)](https://www.codacy.com/gh/Clinton-Davis/davisEstate/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Clinton-Davis/davisEstate&utm_campaign=Badge_Grade)
+
 <!-- [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) -->
 
 ## Motivation
@@ -25,7 +27,7 @@ The idea was to make a fully functioning real estate website, where cliets could
 - Listing page should have fields listed below
 - Listing page should have 1 main image and 6 inner images with (if avaiable) floorplans using lightbox
 - Lightbox should scroll through images
-- Listing page should have a form to submit inquiry for that property listing
+- Listing page should have a form to submit Enquiries for that property listing
 - Form info should go to database and notify agent(s) with an email
 - Frontend register/login to track inquiries
 - Both unregistered and registered users can submit form. If registered, can only submit one per listing
@@ -65,7 +67,7 @@ At the bottom of the card is a 'More Info' button to take you to the listing det
 
 The listing detials page has all the images of the listing and the agent that is looking after it.
 There is more info about the listing here with a detialed description, and a google maps on the address.
-Hear is where you can contact the agent to make an inquiry about the listing.
+Hear is where you can contact the agent to make an Enquiries about the listing.
 
 ##### Search
 
