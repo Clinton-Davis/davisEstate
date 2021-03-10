@@ -4,6 +4,7 @@ Davis Estates is a fake real estate website where you can look and search for li
 
 ---
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8aa51567e344592a98ca606daed922c)](https://app.codacy.com/gh/Clinton-Davis/davisEstate?utm_source=github.com&utm_medium=referral&utm_content=Clinton-Davis/davisEstate&utm_campaign=Badge_Grade_Settings)
 <!-- [![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard) -->
 
 ## Motivation
