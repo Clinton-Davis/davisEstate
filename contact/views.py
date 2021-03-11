@@ -80,7 +80,7 @@ def sell(request):
         )
         valuation.save()
         messages.success(
-            request, 'You request has been submitted, the agent will get back to you soon')
+            request, 'You request has been submitted, the agent will get back to arange a time')
         return redirect('accounts:dashboard')
     return render(request, 'contacts/sell.html', {})
   
