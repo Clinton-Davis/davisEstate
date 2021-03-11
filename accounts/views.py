@@ -47,11 +47,10 @@ def login(request):
         username = request.POST['username']
         password = request.POST['password']
         user = auth.authenticate(username=username, password=password)
-        print(user)
         if user is not None:  # user is fond
             auth.login(request, user)
             messages.success(
-                request, 'You are Login. Welcome back')
+                request, 'You are Logged in. Welcome back')
             return redirect('/')
         else:
             messages.error(request, 'Invalid credentials')
