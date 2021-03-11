@@ -14,11 +14,10 @@
     {% include "includes/_messages.html" %}
     <div class="home-search p-5">
       <div class="overlay p-5">
-        <h1 class="display-4 mb-4">Find your way home</h1>
-
+        <h1 class="display-4 mb-2">Find your way home</h1>
+        <h4 class="mb-4">Dublin (County) Residential Specialist</h4>
         <div class="search">
           <form action="{% url 'listings:search' %}">
-            <!-- Form Row 1 -->
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label class="sr-only">Keywords</label>
@@ -29,32 +28,7 @@
                   placeholder="Keyword (Parking, Bus, etc)"
                 />
               </div>
-
               <div class="col-md-4 mb-3">
-                <label class="sr-only">City</label>
-                <input
-                  type="text"
-                  name="city"
-                  class="form-control"
-                  placeholder="City"
-                />
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <label class="sr-only"> Counties</label>
-                <select name="counties" class="form-control">
-                  <option selected="true" disabled="disabled">
-                    Counties (All)
-                  </option>
-                  {% for key,value in county_choices.items %}
-                  <option value="{{key}}">{{value}}</option>
-                  {% endfor %}
-                </select>
-              </div>
-            </div>
-            <!-- Form Row 2 -->
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
                 <label class="sr-only">Bedrooms</label>
                 <select name="bedrooms" class="form-control">
                   <option selected="true" disabled="disabled">
@@ -65,7 +39,7 @@
                   {% endfor %}
                 </select>
               </div>
-              <div class="col-md-6 mb-3">
+              <div class="col-md-4 mb-3">
                 <select name="price" class="form-control" id="type">
                   <option selected="true" disabled="disabled">
                     Max Price (Any)
