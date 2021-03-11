@@ -47,17 +47,45 @@
             </tr>
           </thead>
           <tbody>
-            {% for contact in contacts %}
+            {% for enquirie in enquiries %}
             <tr>
-              <td>{{ contact.id }}</td>
-              <td>{{ contact.listing }}</td>
-              <td>{{ contact.contact_date|date:"M d, Y" }}</td>
+              <td>{{ enquirie.id }}</td>
+              <td>{{ enquirie.listing }}</td>
+              <td>{{ enquirie.contact_date|date:"M d, Y" }}</td>
               <td>
-                <a class="btn btn-light" href="#">View Listing</a>
+                <a
+                  class="btn btn-light"
+                  href="{% url 'listings:list_details' contact.id %}"
+                  >View Listing</a
+                >
               </td>
             </tr>
             {% empty %}
             <p>You have not made any Enquiriess yet</p>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Your Valuation Requests</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Property</th>
+              <th scope="col">Date</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for valuation in valuations %}
+            <tr>
+              <td>{{ valuation.address }}</td>
+              <td>{{ valuation.request_date|date:"M d, Y" }}</td>
+            </tr>
+            {% empty %}
+            <p>You have not made any Valuations yet</p>
             {% endfor %}
           </tbody>
         </table>
