@@ -1,0 +1,41 @@
+[
+  {
+    "model": "agents.agent",
+    "pk": 1,
+    "fields": {
+      "name": "Deven Kou",
+      "photo": "photos/2021/03/11/MainPhoto_orig.jpg",
+      "description": "Peter Kui is a distinguished and respected real estate agent in Northern California. Known for his exceptional customer service and strong work ethic, Peter consistently makes every transaction as smooth and stress-free as possible for his clients. Peter obtained his Realtor license in 2005 and his Broker license in 2010. He is also skilled in corporate relocation, rental properties and property exchanges. He is a Certified Luxury Home Marketing Specialist and a Certified Residential Specialist, displaying his dedication and success as a Realtor. Peter continues to serve as a top agent in the San Francisco Bay Area, using his extensive knowledge of the region and unparalleled negotiating skills.\r\nHe is experienced buying and selling homes in Danville, San Ramon, Dublin, Walnut Creek, Blackhawk, Pleasant Hill and Alamo. Although location is important, Peter recognizes that his clients should be prioritized over all else. He stays committed to their interests, understanding how important the decision to buy or sell a property can be.\r\nPeter graduated from the University of California, Berkeley with a degree in computer science. Before becoming a Realtor, Peter worked in the computer software industry with companies such as Citibank, Infoseek and Microsoft, giving him a strong background in technology. With this knowledge, he supports his clients in every way possible. When he isn�t working, Peter loves to spend time with his wife, three kids and miniature labradoodle. He especially loves travelling with his family and one of his favourite places to visit is Hawaii. He has two sons who have graduated from college and one daughter who attends UC Berkeley. Peter also tries to maintain an active lifestyle by being an avid hiker and golfer.",
+      "phone": "086 678876",
+      "email": "deven@davisestates.com",
+      "is_mvp": false,
+      "hire_date": "2012-03-11T13:47:43Z"
+    }
+  },
+  {
+    "model": "agents.agent",
+    "pk": 2,
+    "fields": {
+      "name": "Josh Mc Fly",
+      "photo": "photos/2021/03/11/word-image-34-150x150.jpeg",
+      "description": "As a Colorado native and a seasoned real estate professional, I recognize and value the trust my clients place in me, and I strive every day to exceed their expectations. I have been a leading top producer for over 18 years. My sales consistently rank in the top 1% of all Keller Williams Teams Internationally. Prior to entering real estate, \r\nThese experiences instilled in me the discipline it takes to build the most powerful real estate team in Colorado. Outside of real estate, I take pride in giving back to the community and serve as a Board Member of Third Way Center, which helps high-risk, disadvantaged youth become successful adults.",
+      "phone": "087 654321",
+      "email": "josh@davisestates.com",
+      "is_mvp": false,
+      "hire_date": "2015-03-11T14:54:05Z"
+    }
+  },
+  {
+    "model": "agents.agent",
+    "pk": 3,
+    "fields": {
+      "name": "Fiea Blessing",
+      "photo": "photos/2021/03/11/word-image-37-e1583744932158-150x150.jpeg",
+      "description": "Fiea Blessing has been passionate about real estate since her earliest years growing up in Halifax, Nova Scotia. Fiea always knew that she wanted to chart a path helping others, and found her true calling in real estate serving her clients and guiding them through one of the biggest investments of their lives. Over the past decade, Shannon has been involved in the sales and marketing of 1 billion dollars of real estate in Western Canada and has won awards including the President�s Club Award (representing the Top 1% of all Vancouver Realtors) and the Medallion Club Award. Shannon feels incredibly blessed to work with amazing clients who become her friends and a strong part of her network.",
+      "phone": "065 678123",
+      "email": "fiea@davisestates.com",
+      "is_mvp": false,
+      "hire_date": "2018-03-11T15:00:08Z"
+    }
+  }
+]

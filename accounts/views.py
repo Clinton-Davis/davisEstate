@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages, auth
 from django.contrib.auth.models import User
-from contact.models import Contact
+from contact.models import Contact, Valuation
 
 
 def register(request):
@@ -47,11 +47,10 @@ def login(request):
         username = request.POST['username']
         password = request.POST['password']
         user = auth.authenticate(username=username, password=password)
-        print(user)
         if user is not None:  # user is fond
             auth.login(request, user)
             messages.success(
-                request, 'You are Login. Welcome back')
+                request, 'You are Logged in. Welcome back')
             return redirect('/')
         else:
             messages.error(request, 'Invalid credentials')
@@ -66,10 +65,13 @@ def logout(request):
         return redirect('pages:index')
 
 def dashboard(request):
-    user_contacts = Contact.objects.order_by(
+    user_enquiries = Contact.objects.order_by(
         '-contact_date').filter(user_id=request.user.id)
+    user_valuations = Valuation.objects.order_by(
+        '-request_date').filter(user_id=request.user.id)
 
     context = {
-        'contacts': user_contacts
+        'enquiries': user_enquiries,
+        'valuations':  user_valuations
     }
     return render(request, 'accounts/dashboard.html', context)

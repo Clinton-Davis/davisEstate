@@ -37,8 +37,16 @@
             {% else %} 
             class="nav-item mr-3"
             {% endif %}>
-          <a class="nav-link" href="{% url 'listings:listings' %}">Featured Listings</a>
+          <a class="nav-link" href="{% url 'listings:listings' %}">Buy</a>
         </li>
+        <li {% if 'sell' in request.path %} 
+            class="nav-item active mr-3"
+            {% else %} 
+            class="nav-item mr-3"
+            {% endif %}>
+          <a class="nav-link" href="{% url 'contacts:sell' %}">Sell</a>
+        </li>
+        
       </ul>
 
       <ul class="navbar-nav ml-auto">
