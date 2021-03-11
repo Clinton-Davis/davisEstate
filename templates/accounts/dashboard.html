@@ -35,10 +35,10 @@
 
 <section id="dashboard" class="py-4">
   <div class="container">
+    {% if enquiries %}
     <div class="row">
       <div class="col-md-12">
         <h2>Your Enquiries</h2>
-
         <table class="table">
           <thead>
             <tr>
@@ -61,13 +61,16 @@
                 >
               </td>
             </tr>
-            {% empty %}
-            <p>You have not made any Enquiriess yet</p>
             {% endfor %}
           </tbody>
         </table>
       </div>
     </div>
+    {% else %}
+    <!-- 1 -->
+    {% endif %}
+    <!-- 1 -->
+    {% if valuations %}
     <div class="row">
       <div class="col-md-12">
         <h2>Your Valuation Requests</h2>
@@ -76,7 +79,7 @@
             <tr>
               <th scope="col">Property</th>
               <th scope="col">Date</th>
-              <th scope="col">Status</th>
+              <th class="text-center" scope="col">Status</th>
             </tr>
           </thead>
           <tbody>
@@ -84,14 +87,33 @@
             <tr>
               <td>{{ valuation.address }}</td>
               <td>{{ valuation.request_date|date:"M d, Y" }}</td>
+              {% if valuation.valuation_completed %}
+              <td id="statis_true" class="text-center">Completed</td>
+              {% else %}
+              <td id="statis_false" class="text-center">Pending</td>
+              {% endif %}
             </tr>
-            {% empty %}
-            <p>You have not made any Valuations yet</p>
             {% endfor %}
           </tbody>
         </table>
       </div>
     </div>
+    {% else %}
+    <!-- 1 -->
+    {% endif %}
+    <!-- 1 -->
+    {% if not valuations and not enquiries %}
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-center">Welcome to you DashBoard</h3>
+        <p class="text-center">
+          In you dashboard, you will find a list of all the enquiries you and
+          made and a list of all the valuation you have requested.
+        </p>
+      </div>
+    </div>
+
+    {% endif %}
   </div>
 </section>
 {% endblock content %}

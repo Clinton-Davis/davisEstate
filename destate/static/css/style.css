@@ -19,11 +19,24 @@
 #top-bar {
   background-color: #f2f8fa;
 }
-/* #main-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
+#statis_true {
+  background-color: #0bf76d88;
+  color: #000000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#statis_false {
+  background-color: #ffc10788;
+  color: #000000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 img {
   width: 100%;
 }

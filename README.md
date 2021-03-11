@@ -90,8 +90,9 @@ The login form askes for the username and password, then if login is successfull
 - ![#303aca](https://placehold.it/15/303aca/000000?text=+) `#303aca` - Secondary
 - ![#333333cc](https://placehold.it/15/333333cc/000000?text=+) `#333333cc` - Supplementary colour 1
 - ![#17a2b8](https://placehold.it/15/17a2b8/000000?text=+) `#17a2b8` - Supplementary colour 2
-- ![#e94646](https://placehold.it/15/e94646/000000?text=+) `#e94646` - Supplementary colour 3
-- ![#ffc107](https://placehold.it/15/ffc107/000000?text=+) `#ffc107` - Supplementary colour 4
+- ![#e9464688](https://placehold.it/15/e9464688/000000?text=+) `#e9464688` - Supplementary colour 3
+- ![#ffc10788](https://placehold.it/15/ffc10788/000000?text=+) `#ffc10788` - Supplementary colour 4
+- ![#0bf76d88](https://placehold.it/15/0bf76d88/000000?text=+) `#0bf76d88` - Supplementary colour 4
 
 ---
 
