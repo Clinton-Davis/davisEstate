@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from listings.models import Listing
 from agents.models import Agent
-from listings.selectChoices import bedroom_choices, price_choices, county_choices
+from listings.selectChoices import bedroom_choices, price_choices
 
 def index(request):
     listings = Listing.objects.order_by('-list_date').filter(is_published=True)[:3]
@@ -9,7 +9,6 @@ def index(request):
         'listings': listings,
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
-        'county_choices': county_choices,
     }
     return render(request, 'pages/index.html', context)
 

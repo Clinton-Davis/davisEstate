@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from .models import Listing
-from listings.selectChoices import bedroom_choices, price_choices, county_choices
+from listings.selectChoices import bedroom_choices, price_choices
+
 
 def listings(request):
      listings = Listing.objects.order_by('-list_date').filter(is_published=True)
@@ -50,7 +51,6 @@ def search(request):
      context = {
      'bedroom_choices': bedroom_choices,
      'price_choices': price_choices,
-     'county_choices': county_choices,
      'listings': queryset_list,
      'values': request.GET,
      }

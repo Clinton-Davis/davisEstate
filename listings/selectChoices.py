@@ -32,32 +32,3 @@ price_choices = {
     "950000":'€950,000',
     "1000000":'€1M+'
 }
-
-county_choices = {
-    'carlow': 'Carlow',
-    'cavan': 'Cavan',
-    'clare': 'Clare',
-    'cork': 'Cork',
-    'donegal': 'Donegal',
-    'dublin': 'Dublin',
-    'galway': 'Galway',
-    'kerry': 'Kerry',
-    'kildare': 'Kildare',
-    'kilkenny': 'Kilkenny',
-    'laois': 'Laois',
-    'leitrim': 'Leitrim',
-    'limerick': 'Limerick',
-    'longford': 'Longford',
-    'louth': 'Louth',
-    'layo': 'Mayo',
-    'leath': 'Meath',
-    'lonaghan': 'Monaghan',
-    'offaly': 'Offaly',
-    'roscommon': 'Roscommon',
-    'sligo': 'Sligo',
-    'tipperary': 'Tipperary',
-    'waterford': 'Waterford',
-    'westmeath': 'Westmeath',
-    'wexford': 'Wexford',
-    'wicklow': 'Wicklow',
-}

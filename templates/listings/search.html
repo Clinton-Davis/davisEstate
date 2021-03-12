@@ -13,7 +13,7 @@
     <div class="row text-center">
       <div class="col-md-12">
         <form action="{% url 'listings:search' %}">
-          <!-- Form Row 1 -->
+          <!-- Form Row 2 -->
           <div class="form-row">
             <div class="col-md-4 mb-3">
               <label class="sr-only">Keywords</label>
@@ -25,35 +25,6 @@
                 value="{{ values.keywords }}"
               />
             </div>
-
-            <div class="col-md-4 mb-3">
-              <label class="sr-only">City</label>
-              <input
-                type="text"
-                name="city"
-                class="form-control"
-                placeholder="City"
-                value="{{ values.city }}"
-              />
-            </div>
-
-            <div class="col-md-4 mb-3">
-              <label class="sr-only"> Counties</label>
-              <select name="county" class="form-control">
-                <option selected="true" disabled="disabled">
-                  Counties (All)
-                </option>
-                {% for key,value in county_choices.items %}
-                <!-- 1 -->
-                <option value="{{key}}"
-                {% if key == values.county %} selected {% endif %}
-                >{{value}}</option>
-                {% endfor %}
-              </select>
-            </div>
-          </div>
-          <!-- Form Row 2 -->
-          <div class="form-row">
             <div class="col-md-6 mb-3">
               <label class="sr-only">Bedrooms</label>
               <select name="bedrooms" class="form-control">
