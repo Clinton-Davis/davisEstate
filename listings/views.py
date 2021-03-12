@@ -28,16 +28,6 @@ def search(request):
         keywords = request.GET['keywords']
         if keywords:
            queryset_list = queryset_list.filter(description__icontains=keywords)
-     #City
-     if 'city' in request.GET:
-        city = request.GET['city']
-        if city:
-           queryset_list = queryset_list.filter(city__iexact=city)
-     #County
-     if 'county' in request.GET:
-        county = request.GET['county']
-        if county:
-           queryset_list = queryset_list.filter(county__iexact=county)
      #Bedrooms
      if 'bedrooms' in request.GET:
         bedrooms = request.GET['bedrooms']

@@ -57,7 +57,6 @@ def contact(request):
 
 def sell(request):
     if request.method == 'POST':
-        print('Got Post')
         address = request.POST['address']
         name = request.POST['name']
         email = request.POST['email']
