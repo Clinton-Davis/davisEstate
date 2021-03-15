@@ -4,11 +4,45 @@ Davis Estates is a fake real estate website where you can look and search for li
 
 ---
 
-[![Build Status](https://travis-ci.org/Clinton-Davis/davisEstate.svg?branch=master)](https://travis-ci.org/Clinton-Davis/davisEstate) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7b4f76ae857f4e60886cdeea68c90761)](https://www.codacy.com/gh/Clinton-Davis/davisEstate/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Clinton-Davis/davisEstate&utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/Clinton-Davis/davisEstate.svg?branch=master)](https://travis-ci.org/Clinton-Davis/davisEstate) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7b4f76ae857f4e60886cdeea68c90761)](https://www.codacy.com/gh/Clinton-Davis/davisEstate/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Clinton-Davis/davisEstate&utm_campaign=Badge_Grade)[![Generic badge](https://img.shields.io/badge/Django-3.1.7-s.svg)](https://shields.io/) [![Python 3.9](https://img.shields.io/badge/Python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-360/) [![Generic badge](https://img.shields.io/badge/Heroku-Postgres-s.svg)](https://shields.io/)
+
+---
+
+## Demo
+
+[![Generic badge](https://img.shields.io/badge/Davis_Estates_live_Demo-Here-<>.svg)](https://focus-fitness.herokuapp.com/)
+
+![mockups](media/smartmockups_kmb0cxrv.png)
+
+---
+
+## Table of Contents
+
+1. [**UX**](#ux)
+2. [**Motivation**](#motivation)
+3. [**Scope**](#scope)
+4. [**Structure**](#structure)
+   - [**Home Page**](#home-page)
+   - [**About Page**](#about-page)
+   - [**Listing Page**](#listing)
+   - [**Listing detail Page**](#listing-details)
+   - [**Search results Page**](#search)
+   - [**Register Page**](#register)
+   - [**Login Page**](#login)
+   - [**Dashboard Page**](#dashboard)
+5. [**Surface**](#surface)
+6. [**Technologies**](#technologies)
+7. [**Features**](#features)
+8. [**Testing**](#testing)
+9. [**Deployment**](#deployment)
+10. [**Credits & Acknowledgements**](#credits)
+11. [**Disclaimer**](#disclaimer)
+
+---
 
 ## Motivation
 
-My motivation behind the creation of Davis Estates was to practice using Django and building up my portfolio and have an example to show future clients.
+My motivation behind the creation of Davis Estates was to practice using Django and building up my portfolio.
 
 ## UX
 
@@ -32,9 +66,13 @@ The idea was to make a fully functioning real estate website, where clients coul
 - Frontend register/login to track inquiries
 - Both unregistered and registered users can submit the form. If registered, can only submit one per listing
 
+---
+
+[Back to Top :arrow_up:](#table-of-contents)
+
 ### Structure
 
-##### Home
+#### Home
 
 The home page or Index page is the first page users see and can interact with. It is divided into 3 sections.
 
@@ -47,42 +85,46 @@ Hold 3 of the newest listing on the webpage.
 **Section 3**
 Hold information regarding the Consulting Services, Property Management, Selling & Valuation services we offer.
 
-##### About
+#### About
 
 The About page holds all the details about Davis-Estates
 This is where you will find the "Seller Of The Month". There is there a picture and bio.
 
-##### Listing
+#### Listing
 
 Here is all the listing we have to offer. They are in a "Card" format with three in a row with 6 to a page.
 each listing has the price, an image, address, city and county.
 Followed by the number of Bedrooms, Bathrooms, if there is parking and square meters, as well as the date it was listed.
 At the bottom of the card is a 'More Info' button to take you to the listing details page.
 
-##### Listing Details
+#### Listing Details
 
 The listing details page has all the images of the listing and the agent that is looking after it.
 There is more info about the listing here with a detailed description and a google map on the address.
 Here is where you can contact the agent to make an Enquiries about the listing.
 
-##### Search
+#### Search
 
 If you search for a listing, you will be taken to the search page, it has the same layout as the listing page, but will only show listing what have the criteria you searched for.
 
-##### Register
+#### Register
 
 The register page is a simple form that asks for an email address, username and Password, after a successful registration the user is logged in automatically.
 
-##### Login
+#### Login
 
 The login form asks for the username and password, then if login is successful the user is redirected to the home page.
 
-##### Dashboard
+#### Dashboard
 
 The dashboard is where you will find details on all the listings you have made enquires about.
 You all also find a list of valuation request you have made, along with there status.
 When a validation request is made it will automatically be "Pending".
 Only after the validation is finished will the status be "Completed".
+
+---
+
+[Back to Top :arrow_up:](#table-of-contents)
 
 ### Surface
 
@@ -97,6 +139,8 @@ Only after the validation is finished will the status be "Completed".
 - ![#0bf76d88](https://placehold.it/15/0bf76d88/000000?text=+) `#0bf76d88` - Supplementary colour 4
 
 ---
+
+[Back to Top :arrow_up:](#table-of-contents)
 
 ## Technologies
 
@@ -116,7 +160,7 @@ Only after the validation is finished will the status be "Completed".
 - [GitHub](https://github.com/) ~ Distributed version control and source code management (SCM) functionality of Git, plus its features.
 - [Travis](https://travis-ci.org/) ~ Travis CI is a hosted continuous integration service used to build and test software projects hosted at GitHub and Bitbucket.
 - [Font Awesome](https://fontawesome.com/) ~ Font Awesome icons
-
+- [Google Maps Api](https://fontawesome.com/) ~ Google maps api - geolactions
 - [Git](https://git-scm.com/) ~ Distributed version control system
 - [Slack](https://slack.com/intl/en-ie/) ~ A workspaces allowing you to organize communications by channels for group discussions and allows for private messages to share information.
 - [autopep8](https://pypi.org/project/autopep8/) ~ A tool that automatically formats Python code to conform to the PEP 8 style guide
@@ -124,11 +168,9 @@ Only after the validation is finished will the status be "Completed".
 - [TinyPNG](https://tinypng.com/) ~ A smart lossy compression technique to reduce the file size of your PNG files.
 - [Google Fonts](https://fonts.google.com/) ~ A library free licensed font families, an interactive web directory for browsing the library.
 
-<div align="right">
+---
 
 [Back to Top :arrow_up:](#table-of-contents)
-
-</div>
 
 ## Features
 
@@ -145,6 +187,10 @@ Only after the validation is finished will the status be "Completed".
 - The inquire is saved to the database and the agent looking after the listing is notified via email.
 - Both unregistered and registered users can submit the form. If registered, can only submit one per listing.
 
+---
+
+[Back to Top :arrow_up:](#table-of-contents)
+
 ## Deployment
 
 ### Local Deployment
@@ -160,45 +206,45 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 1. From the terminal create the directory you want to work in.
 
    ```bash
-   $ mkdir <filename>
+    mkdir <filename>
    ```
 
 2. Change into Directory
 
    ```bash
-   $ cd <filename>
+    cd <filename>
    ```
 
 3. Clone the repository from GitHub.
 
    ```bash
-   $ git clone https://github.com/Clinton-Davis/davisEstate.git
+    git clone https://github.com/Clinton-Davis/davisEstate.git
    ```
 
 4. Change into focus_fitness directory.
 
    ```bash
 
-   $ cd destates
+    cd destates
    ```
 
 5. Install [virtualenv](https://pypi.org/project/virtualenv/)
 
    ```bash
 
-   $ pip install virtualenv
+    pip install virtualenv
    ```
 
 6. Create a virtual environment (env)
 
    ```bash
-   $ virtualenv env
+    virtualenv env
    ```
 
 7. Activate env with:
 
    ```bash
-   $ source env/Scripts/activate
+    source env/Scripts/activate
    ```
 
 8. In destates folder make a `.env` file and add the variables below.
@@ -217,49 +263,47 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
    ```bash
 
-   $ pip install -r requirements.txt
+    pip install -r requirements.txt
    ```
 
 10. Then migrate
 
     ```bash
 
-    $ python manage.py migrate
+     python manage.py migrate
     ```
 
 11. Create a superuser.
 
     ```bash
 
-    $ python manage.py createsuperuser
+     python manage.py createsuperuser
     ```
 
 12. Load agents.
 
     ```bash
 
-    $ python manage.py loaddata agents.json
+     python manage.py loaddata agents.json
     ```
 
 13. Load Listings.
 
     ```bash
 
-    $ python manage.py loaddata listings.json
+     python manage.py loaddata listings.json
     ```
 
 14. Run the project with
 
     ```bash
 
-    $ python manage.py runserver
+     python manage.py runserver
     ```
 
- <div align="right">
+---
 
 [Back to Top :arrow_up:](#table-of-contents)
-
-</div>
 
 ## Tests
 
@@ -271,19 +315,18 @@ I have automated testing using "TestCase"
 - Testing the models and views on the contact app.
 - Testing the views on the listings app.
 
-## How to use?
+---
 
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to using your project.
+[Back to Top :arrow_up:](#table-of-contents)
 
 ## Credits
 
-giving to me by Brad Traversy.
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blog posts or links to people who contributed to this project.
+Credit for the idea and structure of the template is giving to Brad Traversy. He did a great job with it in a Udemy course he made.
+The pitures of the agents is from [TheClose](https://theclose.com/write-real-estate-agent-bio/)
+All the listing are taken form [Daft.ie](https://www.daft.ie/).
 
-#### Anything else that seems useful
+### Disclaimer
 
-## License
+###### <i>This project was created for educational use only </i>
 
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [ClintonDavis]()
+[Back to Top :arrow_up:](#table-of-contents)
