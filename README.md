@@ -12,7 +12,7 @@ Davis Estates is a fake real estate website where you can look and search for li
 
 [![Generic badge](https://img.shields.io/badge/Davis_Estates_live_Demo-Here-<>.svg)](https://focus-fitness.herokuapp.com/)
 
-![mockups](media/smartmockups_kmb0cxrv.png)
+![mockups](smart_mockup_media/smartmockups_kmb0cxrv.png)
 
 ---
 
