@@ -1,0 +1,23 @@
+dj() {
+	python manage.py "$@"
+}
+
+env() {
+	source env/Scripts/activate
+}
+
+makemigrations() {
+	python manage.py makemigrations "$@"
+}
+
+migrate() {
+	python manage.py migrate
+}
+
+freeze(){
+	pip freeze > requirements.txt
+}
+
+install_r(){
+    pip install -r requirements.txt
+}

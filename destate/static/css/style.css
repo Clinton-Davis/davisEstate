@@ -1,181 +1,193 @@
 ul a {
-  color: #ffffff !important;
+    color: #ffffff !important;
 }
 
 #listings {
-  background: #f6f8f8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #ffffff,
-    #ace1f5,
-    #f6f8f8
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    #ace1f5,
-    #f6f8f8
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f6f8f8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #ffffff, #ace1f5, #f6f8f8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #ffffff, #ace1f5, #f6f8f8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .btn-secondary {
-  color: #fff !important;
+    color: #fff !important;
 }
 #top-bar {
-  background-color: #f2f8fa;
+    background-color: #f2f8fa;
 }
 #statis_true {
-  background-color: #0bf76d88;
-  color: #000000;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+    background-color: #0bf76d88;
+    color: #000000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 #statis_false {
-  background-color: #ffc10788;
-  color: #000000;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+    background-color: #ffc10788;
+    color: #000000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 img {
-  width: 100%;
+    width: 100%;
 }
 #map {
-  height: 22rem;
-  width: 22rem;
+    height: 22rem;
+    width: 22rem;
 }
 .about-img {
-  width: 70%;
+    width: 70%;
 }
 .logo {
-  width: 80px;
+    width: 80px;
 }
 .address {
-  min-height: 4.5rem;
+    min-height: 4.5rem;
 }
 .navbar {
-  opacity: 0.9;
-  text-transform: uppercase;
+    opacity: 0.9;
+    text-transform: uppercase;
 }
 .social a {
-  margin-right: 0.4rem;
+    margin-right: 0.4rem;
 }
 #showcase {
-  background: url(../img/showcase.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: url(../img/showcase.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  position: relative;
-  min-height: 650px;
-  color: #fff;
-  padding-top: 6rem;
+    position: relative;
+    min-height: 650px;
+    color: #fff;
+    padding-top: 6rem;
 }
 #showcase .home-search {
-  min-height: 400px;
-  position: relative;
-  border-radius: 5px;
+    min-height: 400px;
+    position: relative;
+    border-radius: 5px;
 }
 #showcase .overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 400px;
-  width: 100%;
-  background: #333333cc;
-  box-shadow: 0px 2px 21px -1px rgba(0, 0, 0, 0.75),
-    0px 2px 21px -1px rgba(0, 0, 0, 0.75) inset;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+    width: 100%;
+    background: #333333cc;
+    box-shadow: 0px 2px 21px -1px rgba(0, 0, 0, 0.75), 0px 2px 21px -1px rgba(0, 0, 0, 0.75) inset;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 #services {
-  background: url(../img/building.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background: url(../img/building.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  min-height: 300px;
-  position: relative;
-  overflow: hidden;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
 }
 #services::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  width: 100%;
-  background: #6dd4facc;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: #6dd4facc;
 }
 #showcase-inner {
-  background: url(../img/building.jpg) no-repeat top center fixed;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  min-height: 200px;
+    background: url(../img/building.jpg) no-repeat top center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
 }
 #showcase-inner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  width: 100%;
-  background: rgba(32, 110, 134, 0.8);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    background: rgba(32, 110, 134, 0.8);
 }
 #showcase-inner.showcase-search {
-  min-height: 270px;
+    min-height: 270px;
+}
+.logos {
+    height: 2rem;
+}
+#footer-legal {
+    color: rgb(128, 128, 128);
+    line-height: 0.9rem;
+    font-size: 0.8em;
 }
 
+.spinning {
+    animation-name: spin;
+    animation-duration: 20000ms;
+    /* How long lasts 1 turn */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 #work {
-  padding: 6rem 0;
+    padding: 6rem 0;
 }
 .listing-preview a {
-  position: relative;
+    position: relative;
 }
 @media (max-width: 991px) {
-  #showcase {
-    padding-top: 4rem;
-  }
-  #showcase h1 {
-    font-size: 40px;
-  }
-  .hide-md-down {
-    display: none;
-  }
+    #showcase {
+        padding-top: 4rem;
+    }
+    #showcase h1 {
+        font-size: 40px;
+    }
+    .hide-md-down {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
-  #showcase {
-    padding-top: 3rem;
-  }
-  #showcase h1 {
-    font-size: 40px;
-  }
-  #showcase p {
-    display: none;
-  }
-  #top-bar {
-    text-align: center;
-  }
-  #top-bar .social {
-    text-align: center !important;
-  }
+    #showcase {
+        padding-top: 3rem;
+    }
+    #showcase h1 {
+        font-size: 40px;
+    }
+    #showcase p {
+        display: none;
+    }
+    #top-bar {
+        text-align: center;
+    }
+    #top-bar .social {
+        text-align: center !important;
+    }
 }
 
 @media (max-width: 576px) {
-  #showcase h1 {
-    font-size: 30px;
-  }
-  #showcase-inner h1 {
-    font-size: 40px;
-  }
+    #showcase h1 {
+        font-size: 30px;
+    }
+    #showcase-inner h1 {
+        font-size: 40px;
+    }
 }
